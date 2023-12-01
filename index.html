@@ -14,9 +14,10 @@
 <body>
   <div class="playlist-container">
     <header>
-      <button class="back-button">Back</button>
+      <span class="back-button"><i class="material-icons">arrow_back</i></span>
       <h1>Playlist - Rock</h1>
-      <button class="menu-button">Menu</button>
+      <span class="menu-button"><i class="material-icons">menu</i></span>
+
     </header>
 
     <ul class="song-list">
@@ -61,26 +62,39 @@
         <div class="song-info">
           <h4 class="song-title">quia</h4>
           <p class="song-artist">earum assumenda non</p>
-           <span class="play-now"><i class="material-icons">play_arrow</i></span>
+          <span class="play-now"><i class="material-icons">play_arrow</i></span>
+        </div>
+      </li>
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <h4 class="song-title">natus</h4>
+          <p class="song-artist">nulla eos cum</p>
+          <span class="play-now"><i class="material-icons">play_arrow</i></span>
         </div>
       </li>
     </ul>
     <div class="now-on">
 
-      <img src="https://picsum.photos/50" alt="Album cover">
+      <!-- <img src="https://picsum.photos/50" alt="Album cover">
       <div class="song-playing-info">
         <h3 class="song-playing-title">sunt</h3>
         <p class="song-playing-artist">sapiente pariatur quae</p>
-      </div>
+      </div> -->
+
+
       <div class="controls">
         <aside>
           <img src="https://picsum.photos/300" alt="Album cover">
           <div class="song-playing-info-big">
             <h1 class="song-playing-title">sunt</h1>
             <p class="song-playing-artist">sapiente pariatur quae</p>
+            <span class="like-button"><i class="material-icons">favorite_border</i></span>
+            <span class="like-button"><i class="material-icons">thumb_up</i></span>
+            <div class="progress-bar">
+              <div class="progress-bar-filled"></div>
+            </div>
           </div>
-          <span class="like-button"><i class="material-icons">favorite_border</i></span>
-          <span class="like-button"><i class="material-icons">thumb_up</i></span>
           <span class="repeat-button"><i class="material-icons">repeat</i></span>
           <span class="skip-button"><i class="material-icons">skip_previous</i></span>
           <span class="play-button"><i class="material-icons">play_arrow</i></span>
@@ -88,8 +102,14 @@
           <span class="shuffle-button"><i class="material-icons">shuffle</i></span>
         </aside>
       </div>
-
     </div>
+    <footer>
+      <div class="ad">
+        <h3 class="ad-title">BUY THIS ITEM NOW $99</h3>
+        <img src="https://picsum.photos/1000/150" alt="Ad">
+        </div>
+      </div>
+    </footer>
   </div>
 
 </body>

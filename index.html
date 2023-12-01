@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet"> 
-  <title>Music Player</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script src="script.js" defer></script> -->
+  <title>Playlist - Rock</title>
 
 </head>
-<body>
-  
 
-  <span class="material-icons">
-    play_arrow
-    </span>
-    
+<body>
+  <div class="playlist-container">
+    <header>
+      <button class="back-button">Back</button>
+      <h1>Playlist - Rock</h1>
+      <button class="menu-button">Menu</button>
+    </header>
+
+    <ul class="song-list">
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <span class="song-title">non</span>
+          <span class="song-artist">explicabo rerum aut</span>
+        </div>
+      </li>
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <span class="song-title">laboriosam</span>
+          <span class="song-artist">et ratione explicabo</span>
+        </div>
+      </li>
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <span class="song-title">consequatur</span>
+          <span class="song-artist">doloribus dolores nihil</span>
+        </div>
+      </li>
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <span class="song-title">cumque</span>
+          <span class="song-artist">in tenetur dolores</span>
+        </div>
+      </li>
+      <li class="song">
+        <img src="https://picsum.photos/50" alt="Album cover">
+        <div class="song-info">
+          <span class="song-title">quia</span>
+          <span class="song-artist">earum assumenda non</span>
+        </div>
+      </li>
+    </ul>
+    <div class="now-on">
+      <img src="https://picsum.photos/50" alt="Album cover">
+      <div class="song-playing-info">
+        <span class="song-playing-title">sunt</span>
+        <span class="song-playing-artist">sapiente pariatur quae</span>
+      </div>
+      <div class="controls">
+
+        <button class="skip-button"><i class="material-icons">skip_previous</i></button>
+        <button class="play-button"><i class="material-icons">play_arrow</i></button>
+        <button class="skip-button"><i class="material-icons">skip_next</i></button>
+
+      </div>
+    </div>
+  </div>
+
 </body>
+
 </html>

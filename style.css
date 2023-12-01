@@ -1,0 +1,82 @@
+/* relway */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Raleway', sans-serif;
+}
+body {
+  background: #121212;
+  color: #b3b3b3;
+  font-family: 'Raleway', sans-serif;
+}
+
+.playlist-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.song-list {
+  display: inline-grid;
+  list-style: none;
+  padding: 20px 0;
+  /* background-color: red; */
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.song img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.song-info {
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+}
+
+.now-on {
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-end;
+  padding: 20px 0;
+  /* move up */
+  transform: translateY(-75%);
+}
+
+.song-playing-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.controls {
+  margin-left: auto;
+}
+
+.controls .material-icons {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.controls .material-icons:active {
+  color: #1DB954; 
+}
+
+.song-playing-info-big {
+  order: -1;
+}

@@ -11,6 +11,7 @@ body {
 }
 
 .playlist-container {
+  /* display: flex; */
   width: 65%;
 
   /* margin: 0 auto; */
@@ -18,7 +19,7 @@ body {
   border-radius: 10px;
   border: 1px solid #282828;
   background-color: #282828;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   /* display: relative; */
   /* overflow: hidden; */
 }
@@ -30,13 +31,32 @@ header {
   padding: 20px 0;
 }
 
+.back-button {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.menu-button {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
 .song-list {
   display: inline-grid;
   /* list-style: none; */
   padding: 20px 0;
   margin: 1px 50px;
   /* background-color: red; */
+
 }
+
+
+
+
 
 .song {
   display: flex;
@@ -47,24 +67,52 @@ header {
 .song img {
   /* width: 50px; */
   /* height: 50px; */
-  margin-right: 20px;
+  /* margin-right: 20px; */
+  margin: 10px 20px;
   border-radius: 50%;
 }
 
 .song-info {
   display: flex;
   flex-direction: column;
-  flex-direction: row;
+  width: 325px;
+
+}
+.song-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* margin-bottom: 5px; */
+  margin: 10px 0;
+}
+.song-artists {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.song:hover {
+  background-color: white;  
+  cursor: pointer;
+}
+
+.play-now {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: baseline;
+  /* move up */
+  transform: translateY(-100%);
+
 }
 
 .now-on {
   display: flex;
   align-items: center;
   align-items: flex-end;
-  /* transform: translateY(-75%); */
-  margin: 0px 125px;
+  transform: translateY(-25%);
+  margin: -381px 560px;
+  background-color: red;
 }
-
 .song-playing-info {
   display: flex;
   flex-direction: column;
@@ -73,6 +121,17 @@ header {
 
 .controls {
   margin-left: auto;
+}
+.song-playing-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.song-playing-artist {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #b3b3b3;
 }
 
 .controls .material-icons {
@@ -119,8 +178,8 @@ header {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin-top: 293px;
 }
-
 
 
 .ad-title {
@@ -136,6 +195,7 @@ header {
   /* animation-duration: 1s; */
   /* animation-iteration-count: infinite; */
   /* animation-delay: 5s; */
+
 }
 .ad-title:active  {
   background-color: #085824;

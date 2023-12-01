@@ -1,20 +1,26 @@
 /* relway */
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 body {
   background: #121212;
   color: #b3b3b3;
-  font-family: 'Raleway', sans-serif;
 }
 
 .playlist-container {
-  width: 60%;
-  margin: 0 auto;
+  width: 65%;
+
+  /* margin: 0 auto; */
+  margin: 200px auto;
+  border-radius: 10px;
+  border: 1px solid #282828;
+  background-color: #282828;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* display: relative; */
+  /* overflow: hidden; */
 }
 
 header {
@@ -26,36 +32,37 @@ header {
 
 .song-list {
   display: inline-grid;
-  list-style: none;
+  /* list-style: none; */
   padding: 20px 0;
+  margin: 1px 50px;
   /* background-color: red; */
 }
 
 .song {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  border: 1px solid gray;
 }
 
 .song img {
-  width: 50px;
-  height: 50px;
+  /* width: 50px; */
+  /* height: 50px; */
   margin-right: 20px;
+  border-radius: 50%;
 }
 
 .song-info {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   flex-direction: row;
 }
 
 .now-on {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   align-items: flex-end;
-  padding: 20px 0;
-  /* move up */
-  transform: translateY(-75%);
+  /* transform: translateY(-75%); */
+  margin: 0px 125px;
 }
 
 .song-playing-info {
@@ -69,14 +76,74 @@ header {
 }
 
 .controls .material-icons {
-  margin: 0 10px;
+  margin: 10px 15px;
   cursor: pointer;
 }
 
 .controls .material-icons:active {
-  color: #1DB954; 
+  color: #1db954;
 }
 
 .song-playing-info-big {
   order: -1;
 }
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background-color: #535353;
+  border-radius: 2px;
+  /* margin-top: 10px; */
+  margin: 10px 0px;
+}
+
+.progress-bar-filled {
+  height: 100%;
+  background-color: #1db954;
+  width: 0%;
+  animation-name: fillProgressBar;
+  animation-duration: 25s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fillProgressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.ad {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+.ad-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #1db954;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  /* animation-name: flickerAnimation; */
+  /* animation-duration: 1s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-delay: 5s; */
+}
+.ad-title:active  {
+  background-color: #085824;
+}
+
+/* 
+@keyframes flickerAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} */

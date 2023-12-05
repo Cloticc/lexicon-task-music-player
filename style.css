@@ -196,6 +196,7 @@ header {
   animation-name: fillProgressBar;
   animation-duration: 25s;
   animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 }
 
 @keyframes fillProgressBar {

@@ -283,3 +283,182 @@ header {
   50% { opacity: 0; }
   100% { opacity: 1; }
 } */
+
+
+@media screen and (max-width: 768px) {
+  .playlist-container {
+    margin: 10rem 0rem;
+  }
+  .music-container {
+    flex-direction: column;
+  }
+  .song-list {
+    max-height: 500px;
+  }
+  .song-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  .song {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid gray; */
+  }
+  .song img {
+    margin: 10px 20px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .song-info {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+  }
+  .song-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* margin-bottom: 5px; */
+    margin: 10px 0;
+  }
+  .song-artists {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #b3b3b3;
+  }
+  .song:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+  .play-now {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+    /* transform: translateY(-100%); */
+    transform: translate(-3%, -153%);
+  }
+  .now-on {
+    /* transform: none; */
+    margin: 25px 25px;
+    max-width: 50vw; /* use viewport units */
+    object-fit: cover;
+  }
+  .image1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 20vw; /* use viewport units */
+  }
+  .song-playing-img {
+    width: 100%;
+    height: auto; /* maintain aspect ratio */
+    object-fit: cover;
+  }
+  .song-playing-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .controls {
+    margin-left: auto;
+  }
+  .song-playing-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .song-playing-artist {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #b3b3b3;
+  }
+  .controls .material-icons {
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+  .controls .material-icons:active {
+    color: #1db954;
+  }
+  .song-playing-info-big {
+    order: -1;
+  }
+  .like-button {
+    color: #ff0000; /* make icon filled with red */
+    animation: blink 1s infinite; /* make it blink */
+  }
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .like-thump-up {
+    color: #1db954;
+  }
+  .repeat-button {
+    color: #1db954;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #535353;
+    border-radius: 2px;
+    /* margin-top: 10px; */
+    margin: 10px 0px;
+  }
+  .progress-bar-filled {
+    height: 100%;
+    background-color: #1db954;
+    width: 0%;
+    animation-name: fillProgressBar;
+    animation-duration: 25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes fillProgressBar {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .ad {
+    display: flex;
+    flex-direction: column;
+  }
+  .ad-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #1db954;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* animation-name: flickerAnimation; */
+    /* animation-duration: 1s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-delay: 5s; */
+  }
+  .ad-title:active {
+    background-color: #085824;
+  }
+  .ad > img {
+    /* width: 100%; */
+    /* height: 100%; */
+    object-fit: cover;
+  }
+  /*
+@keyframes flickerAnimation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+}

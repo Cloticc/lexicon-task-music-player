@@ -58,13 +58,49 @@ header {
 }
 
 .song-list {
-  margin: 25px 25px;
-  max-width: 50%;
+  /* margin: 25px 25px; */
+  /* max-width: 50%; */
+  overflow-y: auto;
+  max-height: 700px;
 }
+
+.song-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.song-list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+
+.song-list::-webkit-scrollbar-track {
+  background-color: #282828;
+}
+
+
+.song-list::-webkit-scrollbar-thumb {
+  background-color: #1db954;
+  border-radius: 4px;
+}
+
+
+.song-list::-webkit-scrollbar-thumb:hover {
+  background-color: #0f7d3e;
+}
+
+
+.song-list::-webkit-scrollbar-thumb:active {
+  background-color: #085824;
+}
+
 .song {
   display: flex;
   align-items: center;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
 }
 
 .song img {
